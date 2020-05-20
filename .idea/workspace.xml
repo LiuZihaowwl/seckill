@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6ba3d842-dc6a-413f-9d69-670b49414059" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+        <option value="Arquillian JUnit Test Class" />
+        <option value="JUnit4 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1c7Y4Pickr9iAIg5rGavdEsbpx8" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../post" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.seckill.dao" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.SuccessKilledDaoTest.queryByIdWithSeckill">
+    <configuration name="SeckillDaoTest.queryAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="seckill" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.seckill.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.seckill.dao" />
+      <option name="MAIN_CLASS_NAME" value="org.seckill.dao.SeckillDaoTest" />
+      <option name="METHOD_NAME" value="queryAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeckillDaoTest.reduceNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="seckill" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.seckill.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.seckill.dao" />
+      <option name="MAIN_CLASS_NAME" value="org.seckill.dao.SeckillDaoTest" />
+      <option name="METHOD_NAME" value="reduceNumber" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SuccessKilledDaoTest.insertSuccessKilled" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="seckill" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.seckill.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.seckill.dao" />
+      <option name="MAIN_CLASS_NAME" value="org.seckill.dao.SuccessKilledDaoTest" />
+      <option name="METHOD_NAME" value="insertSuccessKilled" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SuccessKilledDaoTest.queryByIdWithSeckill" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="seckill" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.seckill.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.seckill.dao" />
+      <option name="MAIN_CLASS_NAME" value="org.seckill.dao.SuccessKilledDaoTest" />
+      <option name="METHOD_NAME" value="queryByIdWithSeckill" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SuccessKilledDaoTest.queryByIdWithSeckill" />
+        <item itemvalue="JUnit.SuccessKilledDaoTest.insertSuccessKilled" />
+        <item itemvalue="JUnit.SeckillDaoTest.reduceNumber" />
+        <item itemvalue="JUnit.SeckillDaoTest.queryAll" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6ba3d842-dc6a-413f-9d69-670b49414059" name="Default Changelist" comment="" />
+      <created>1589880907126</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589880907126</updated>
+      <workItem from="1589880912978" duration="2507000" />
+      <workItem from="1589883487766" duration="6553000" />
+      <workItem from="1589934238889" duration="6486000" />
+      <workItem from="1589940762740" duration="4863000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="137" y="38" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589945564083">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="137" y="38" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1589945564083" />
+    <state x="488" y="99" key="#com.intellij.ide.util.MemberChooser" timestamp="1589898290471">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="488" y="99" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1589898290471" />
+    <state x="462" y="241" width="441" height="295" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1589939108006">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="462" y="241" width="441" height="295" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.768@0.0.1366.768" timestamp="1589939108006" />
+    <state x="463" y="138" key="FileChooserDialogImpl" timestamp="1589941222149">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1589941222149" />
+    <state width="1322" height="355" key="GridCell.Tab.0.bottom" timestamp="1589946423655">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1322" height="355" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1589946423655" />
+    <state width="1322" height="355" key="GridCell.Tab.0.center" timestamp="1589946423655">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1322" height="355" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1589946423655" />
+    <state width="1322" height="355" key="GridCell.Tab.0.left" timestamp="1589946423655">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1322" height="355" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1589946423655" />
+    <state width="1322" height="355" key="GridCell.Tab.0.right" timestamp="1589946423655">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1322" height="355" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1589946423655" />
+    <state width="1322" height="406" key="GridCell.Tab.1.bottom" timestamp="1589946423646">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1322" height="406" key="GridCell.Tab.1.bottom/0.0.1366.768@0.0.1366.768" timestamp="1589946423646" />
+    <state width="1322" height="406" key="GridCell.Tab.1.center" timestamp="1589946423646">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1322" height="406" key="GridCell.Tab.1.center/0.0.1366.768@0.0.1366.768" timestamp="1589946423646" />
+    <state width="1322" height="406" key="GridCell.Tab.1.left" timestamp="1589946423646">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1322" height="406" key="GridCell.Tab.1.left/0.0.1366.768@0.0.1366.768" timestamp="1589946423646" />
+    <state width="1322" height="406" key="GridCell.Tab.1.right" timestamp="1589946423646">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1322" height="406" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1589946423646" />
+    <state x="184" y="15" key="SettingsEditor" timestamp="1589899093165">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="184" y="15" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1589899093165" />
+    <state x="363" y="206" key="com.intellij.ide.util.TipDialog" timestamp="1589940867907">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="363" y="206" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1589940867907" />
+    <state x="454" y="85" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1589944851383">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="454" y="85" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1366.768@0.0.1366.768" timestamp="1589944851383" />
+    <state x="339" y="167" key="run.anything.popup" timestamp="1589942018328">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="339" y="167" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1589942018328" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1589939390410">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1589939390410" />
+    <state x="363" y="66" key="spring file set editor" timestamp="1589942626613">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="363" y="66" key="spring file set editor/0.0.1366.768@0.0.1366.768" timestamp="1589942626613" />
+  </component>
+</project>
