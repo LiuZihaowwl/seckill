@@ -36,4 +36,4 @@ ALTER TABLE seckill
 DROP INDEX idx_create_time
 ADD index idx_c_s(start_time,create_time);
 
-mysql -u root -p lzh666666!
+mysql -u root -p lzh666666
