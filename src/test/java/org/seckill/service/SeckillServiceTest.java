@@ -2,6 +2,7 @@ package org.seckill.service;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.seckill.dao.cache.RedisDao;
 import org.seckill.dto.Exposer;
 import org.seckill.dto.SeckillExecution;
 import org.seckill.entity.Seckill;
@@ -24,6 +25,8 @@ public class SeckillServiceTest {
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
     @Autowired
     private SeckillService seckillService;
+    @Autowired
+    private RedisDao redisDao;
     @Test
     public void getSeckillList() {
         List<Seckill> list = seckillService.getSeckillList();
@@ -81,5 +84,18 @@ public class SeckillServiceTest {
             //秒杀未开启或结束
             logger.warn("exposer={}",exposer);
         }
+    }
+    @Test
+    public void executeSeckillProcedure(){
+        long seckillId = 1001;
+        long phone = 18816163896L;
+        Exposer exposer = seckillService.exportSeckillUrl(seckillId);
+        if(exposer.isExposed()){
+            String md5 = exposer.getMd5();
+            SeckillExecution seckillExecution = seckillService.executeSeckillProcedure(seckillId, phone, md5);
+            logger.info(seckillExecution.getStateInfo());
+        }
+
+
     }
 }

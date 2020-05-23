@@ -13,7 +13,7 @@ import org.seckill.enums.SeckillStatEnum;
 public class SeckillExecution {
     private long seckillId;
     //秒杀执行结果状态
-    SeckillStatEnum seckillStatEnum;
+    int state;
     //状态表示
     private String stateInfo;
     //秒杀成功对象
@@ -21,19 +21,19 @@ public class SeckillExecution {
 
     public SeckillExecution(long seckillId, SeckillStatEnum seckillStatEnum) {
         this.seckillId = seckillId;
-        this.seckillStatEnum = seckillStatEnum;
+        this.state = seckillStatEnum.getState();
     }
 
     public SeckillExecution(long seckillId, SeckillStatEnum statEnum, SuccessKilled successKilled) {
         this.seckillId = seckillId;
-        this.seckillStatEnum = statEnum;
+        this.state = statEnum.getState();
         this.stateInfo = statEnum.getStateInfo();
         this.successKilled = successKilled;
     }
 
     public SeckillExecution(long seckillId, SeckillStatEnum seckillStatEnum, String stateInfo) {
         this.seckillId = seckillId;
-        this.seckillStatEnum = seckillStatEnum;
+        this.state = seckillStatEnum.getState();
         this.stateInfo = stateInfo;
     }
 
@@ -45,12 +45,12 @@ public class SeckillExecution {
         this.seckillId = seckillId;
     }
 
-    public SeckillStatEnum getSeckillStatEnum() {
-        return seckillStatEnum;
+    public int getSeckillStatEnum() {
+        return state;
     }
 
     public void setSeckillStatEnum(SeckillStatEnum seckillStatEnum) {
-        this.seckillStatEnum = seckillStatEnum;
+        this.state = seckillStatEnum.getState();
     }
 
     public String getStateInfo() {
@@ -73,7 +73,7 @@ public class SeckillExecution {
     public String toString() {
         return "SeckillExecution{" +
                 "seckillId=" + seckillId +
-                ", seckillStatEnum=" + seckillStatEnum +
+                ", state=" + state +
                 ", stateInfo='" + stateInfo + '\'' +
                 ", successKilled=" + successKilled +
                 '}';

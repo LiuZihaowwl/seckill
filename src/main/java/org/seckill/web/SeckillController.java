@@ -11,6 +11,7 @@ import org.seckill.service.SeckillService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -31,7 +32,7 @@ public class SeckillController {
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
     @Autowired
     private SeckillService seckillService;
-    @RequestMapping(name = "/list", method = RequestMethod.GET)
+    @RequestMapping(value = "/list", method = RequestMethod.GET)
     public String list(Model model){
         //list.jsp + model = ModelAndView
         List<Seckill> list = seckillService.getSeckillList();
@@ -54,7 +55,7 @@ public class SeckillController {
             method = RequestMethod.POST,
             produces = {"application/json;charset=UTF-8"})
     @ResponseBody //把返回的数据结果封装为json
-    public SeckillResult<Exposer> exposer(Long seckillId){
+    public SeckillResult<Exposer> exposer(@PathVariable("seckillId") Long seckillId){
         SeckillResult<Exposer> seckillResult;
         try {
             Exposer exposer = seckillService.exportSeckillUrl(seckillId);
@@ -78,21 +79,23 @@ public class SeckillController {
         }
         SeckillResult<SeckillExecution> seckillResult;
         try {
-            SeckillExecution seckillExecution = seckillService.executeSeckill(seckillId, phone, md5);
+            //存储过程调用
+            SeckillExecution seckillExecution = seckillService.executeSeckillProcedure(seckillId, phone, md5);
             return new SeckillResult<SeckillExecution>(true, seckillExecution);
         }catch (RepeatKillException e){
-            SeckillExecution seckillExecution = new SeckillExecution(seckillId, SeckillStatEnum.REPEAT_KILL);
-            return new SeckillResult<SeckillExecution>(false, seckillExecution);
+            SeckillExecution seckillExecution = new SeckillExecution(seckillId, SeckillStatEnum.REPEAT_KILL, "重复秒杀");
+            return new SeckillResult<SeckillExecution>(true, seckillExecution);
 
         } catch (SeckillCloseException e){
             SeckillExecution seckillExecution = new SeckillExecution(seckillId, SeckillStatEnum.END);
-            return new SeckillResult<SeckillExecution>(false, seckillExecution);
+            return new SeckillResult<SeckillExecution>(true, seckillExecution);
         }catch (Exception e){
             SeckillExecution seckillExecution = new SeckillExecution(seckillId, SeckillStatEnum.INNER_ERROR);
-            return new SeckillResult<SeckillExecution>(false, seckillExecution);
+            return new SeckillResult<SeckillExecution>(true, seckillExecution);
         }
     }
     @RequestMapping(value = "/time/now", method = RequestMethod.GET)
+    @ResponseBody
     public SeckillResult<Long> time(){
         Date now = new Date();
         return new SeckillResult<Long>(true, now.getTime());
